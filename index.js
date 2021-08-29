@@ -1,21 +1,12 @@
 const express = require('express');
 const app = express();
-const User = require('./models/User');
+const User = require('./models/Users');
 
 app.use(express.static(__dirname + '/public'));
 
-app.use(express.urlencoded({
-    extended: false
-}))
-app.use(express.json())
+app.use(express.urlencoded({extended: false}));
+app.use(express.json());
 
-const swaggerUI = require('swagger-ui-express');
-const swaggerDocs = require('./swagger.json');
-
-app.use('/docs', swaggerUI.serve, swaggerUI.setup(swaggerDocs));
-
-
-// Rotas
 app.post('/add', async function (req, res) {
     cpf_matches = await User.findOne({
        cpf: req.body.cpf

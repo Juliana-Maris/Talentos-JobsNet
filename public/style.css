@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 0 150px;
+  align-items: center;
+  box-shadow: 8px 8px 15px 8px rgba(183, 128, 245, 0.25);
+}
+header .menu {
+  color: black;
+}
+.container {
+  text-align: center;
+}
+.container .note {
+  background-size: 20%;
+  max-width: 200px;
+}
+body {
+  background: url(./img/iris.jpg);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+ul li a {
+  text-decoration: none;
+  color: rgb(10, 23, 202);
+  font-size: 20px;
+  font-weight: 500;
+}
+h2 h3 {
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px 5px 20px 5px;
+}
+#submit-btn {
+  color: white;
+  background: rgb(25, 73, 231);
+  font-size: 15px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+}

@@ -1,4 +1,4 @@
-document.forms['cv_form'].addEventListener('submit', (event) => {
+document.forms['cad'].addEventListener('submit', (event) => {
     event.preventDefault();
     const button = document.getElementById('submit-btn');
     const i = document.querySelector('i');
@@ -40,17 +40,14 @@ function ValidaCPF(){
         span.style.marginTop = "8px"
     } 
     }
-
   function fMasc(objeto,mascara) {
 obj=objeto
 masc=mascara
 setTimeout("fMascEx()",1)
 }
-
   function fMascEx() {
 obj.value=masc(obj.value)
 }
-
    function mCPF(cpf){
 cpf=cpf.replace(/\D/g,"")
 cpf=cpf.replace(/(\d{3})(\d)/,"$1.$2")

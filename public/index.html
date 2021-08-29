@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>cadastro de candidatos</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2><a href="/">JobsNet</a></h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Cadastre-se</a></li>
+            </ul>
+            <br>
+        </div>
+        <br>        
+    </header>
+    <main>
+        <section class="container">
+            <div class="title">
+                <br>
+                <h2>O maior banco de talentos da internet!</h2>
+                <br>
+                <h3>Venha fazer parte desta revolução digital!</h3>
+                <br>
+                <img src="img/note.jpg" class="note" alt="note">
+            </div>         
+    </section>
+        <section>
+            <form action="/add" id="cad">
+                <div class="form">
+                    <label for="">Nome:</label>
+                    <input type="text" id="nome" size="50" required>
+                    <label for="">Cargo Pretendido:</label>
+                    <input type="text" id="cargo" size="40"> 
+                </div>
+            
+                <div class="form">
+                    <label for="">Data de Nascimento:</label>
+                    <input type="date" id="nasc" required>                
+                    <label for="">Estado Civil:</label>
+                    <select id="civil" name="civil">
+                        <option value="" selected></option>
+                        <option value="casado">Casado</option>
+                        <option value="solteiro">Solteiro</option>
+                        <option value="divorciado">Divorciado</option>
+                        <option value="viuvo">Viúvo</option>
+                        <option value="outro">Outro</option>
+                    </select>
+                    <label for="">Sexo:</label>
+                    <select name="sexo" id="sexo">
+                    <option value="" selected></option>
+                    <option value="feminino">Feminino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="outro">Outro</option>
+                    </select>
+                </div>   
+                <div class="form">
+                    <label for="">Bairro:</label>
+                    <input type="text" id="bairro" size="25" required>
+                    <label for="">Cidade:</label>
+                    <input type="text" id="cidade" size="25" required>
+                    <label for="">Estado:</label>
+                    <input type="text" id="estado" size="20" required>
+                </div>
+                
+                <div class="form">
+                    <label for="">Seu email:</label>
+                    <input type="email" size="30" id="email" required>
+                    <label for="">Celular:</label>
+                    <input type="text" size="20" id="celular" required>
+                    <label for="">Telefone:</label>
+                    <input type="text" id="fone" size="20">
+                </div> 
+                <div class="form">
+                    <label for="">Identidade:</label>
+                    <input type="text" size="27" id="ident" required>
+                    <label for="">CPF:</label>
+                    <input type="text" size="25" id="cpf" required>
+                </div>
+            
+                <div class="form">   
+                    <label for="">Possui habilitação?</label>
+                    <select id="habilitação" name="habilitação">
+                        <option value="" selected></option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                    </select>
+                    <label for="form">Possui veículo próprio?</label>
+                    <select id="veiculo" name="veiculo">
+                        <option value="" selected></option>
+                        <option value="sim">Sim</option>
+                        <option value="nao">Não</option>
+                </div>
+                <div class="form">
+                    <label for=""></label> 
+                    <input type="button" id="submit-btn" value="cadastrar">                 
+                </div>
+            </form>               
+        </section>
+    </main>
+    <br>
+    <footer>
+        <br>
+        <ul>
+            <li><p><b> Dúvidas? Entre em contato conosco:</b></p></li>
+            <li>
+                <a target="_blank" href="malito:jobsnet@jobs.com"><b>Email</b></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/jobsnet/"><b>Linkedin</b></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://wa.me/11999999999"><b>Whatsapp</b></a>
+            </li>
+        </ul>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,4 +1,4 @@
-const db = requeri('./db');
+const db = require('./db');
 
 
 const UserSchema = db.mongoose.Schema({
@@ -57,7 +57,6 @@ const UserSchema = db.mongoose.Schema({
     carro:  {
         type: String
     }
-
 });
 
 const User = db.mongoose.model('usuarios', UserSchema)

@@ -1,7 +1,7 @@
 {
-  "name": "jobsnet",
+  "name": "talentosjobsnet",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto final do treinamento Gama Academy",
   "main": "index.js",
   "dependencies": {
     "-": "^0.0.1",
@@ -12,14 +12,15 @@
     "mongoose": "^6.0.2",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.12",
-    "sequelize": "^6.6.5"
+    "sequelize": "^6.6.5",
+    "vanilla-masker": "^1.2.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Juliana Martinez",
   "license": "ISC"
 }
